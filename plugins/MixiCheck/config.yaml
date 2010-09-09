@@ -1,0 +1,19 @@
+name: MixiCheck
+id: MixiCheck
+description: ブログにmixiチェックボタンを設置します。mixiチェックボタンをブログの読者がクリックすると、mixiにブログのコンテンツがフィードされます。ポップアップウィンドウ内にmixiのログイン画面が表示され、登録メールアドレスとパスワードによるユーザー認証を行います。
+version: 0.2
+blog_config_template: blog_config.tmpl
+settings:
+  mixi_check_key:
+    scope: blog 
+  mixi_excerpt:
+    scope: blog
+  mixi_adult:
+    scope: blog
+  mixi_button:
+    scope: blog    
+tags:
+  function:
+    MixiOpenGraphMeta: $MixiCheck::MixiCheck::_hdlr_opengraph_meta
+    MixiCheck: $MixiCheck::MixiCheck::_hdlr_mixi_check
+l10n_class: MixiCheck::L10N
