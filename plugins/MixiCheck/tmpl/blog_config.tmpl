@@ -1,18 +1,18 @@
-<mtapp:setting id="mixi_check_key" label="チェックキー" hint="mixi チェックキーは、登録時に発行されるものをお使いください。" show_hint="1">
+<mtapp:setting id="mixi_check_key" label="<MT_TRANS phrase='mixi Check Key'>" hint="<MT_TRANS phrase='Please obtain your check key from the mixi developer center.'>" show_hint="1">
   <input type="text" name="mixi_check_key" id="mixi_check_key" value="<mt:GetVar name="mixi_check_key">" />
 </mtapp:setting>
 
-<mtapp:setting id="mixi_button" label="ボタンの種類" hint="表示するボタンの種類を選んでください。" show_hint="1">
+<mtapp:setting id="mixi_button" label="<MT_TRANS phrase='Button Type'>" hint="<MT_TRANS phrase='Design of the mixi check button.'>" show_hint="1">
   <select name="mixi_button" id="mixi_button" />
-    <option value="button-1"<mt:if var="mixi_button" eq="button-1"> selected="selected"</mt:if>>ボタン１</option>
-    <option value="button-2"<mt:if var="mixi_button" eq="button-2"> selected="selected"</mt:if>>ボタン２</option>
+    <option value="button-1"<mt:if var="mixi_button" eq="button-1"> selected="selected"</mt:if>>Button 1</option>
+    <option value="button-2"<mt:if var="mixi_button" eq="button-2"> selected="selected"</mt:if>>Button 2</option>
   </select>
 </mtapp:setting>
 
-<mtapp:setting id="mixi_adult" label="18 歳未満非対応" hint="18 歳未満非対応ページの場合、18 歳未満の mixi ユーザの使用に制限が課せられます。" show_hint="1">
+<mtapp:setting id="mixi_adult" label="<MT_TRANS phrase='Prohibited under 18'>" hint="<MT_TRANS phrase='Your contents is prohibited under 18.'>" show_hint="1">
   <input type="checkbox" name="mixi_adult" id="mixi_adult" value="1" <mt:if name="mixi_adult"> checked="checked"</mt:if>  />
 </mtapp:setting>
 
-<mtapp:setting id="mixi_excerpt" label="概要を表示" hint="エントリー本文（先頭２００文字）の代わりに、概要を表示します。" show_hint="1">
+<mtapp:setting id="mixi_excerpt" label="<MT_TRANS phrase='Show Excerpt'>" hint="<MT_TRANS phrase='Show the entry excerpt instead of the entry body.'>" show_hint="1">
   <input type="checkbox" name="mixi_excerpt" id="mixi_excerpt" value="1" <mt:if name="mixi_excerpt"> checked="checked"</mt:if>  />
 </mtapp:setting>

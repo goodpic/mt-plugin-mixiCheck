@@ -1,6 +1,6 @@
 name: MixiCheck
 id: MixiCheck
-description: ブログにmixiチェックボタンを設置します。mixiチェックボタンをブログの読者がクリックすると、mixiにブログのコンテンツがフィードされます。ポップアップウィンドウ内にmixiのログイン画面が表示され、登録メールアドレスとパスワードによるユーザー認証を行います。
+description: <MT_TRANS phrase="Add mixi check button to your Movable Type blog.">
 version: 0.2
 blog_config_template: blog_config.tmpl
 settings:
